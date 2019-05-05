@@ -1,0 +1,103 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding-top: 18px;
+    padding-left: 20px;
+}
+
+tr:nth-child(even) {background-color: gainsboro;}
+
+ul ,button {padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: cornflowerblue;
+    position: -webkit-sticky;
+    position: sticky;
+    font-size: 25px;
+    outline: none;
+}
+
+button {width: 10%;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], .password, .number, select, textarea {
+    outline: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.submit2 {width: 50%;
+    background-color: #45a049;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    outline: none;
+}
+
+.submit2:hover, .submit:focus, button:hover, button:focus {
+    background-color: darkcyan;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75{
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.submit{outline: none;
+        padding: 10px 20px;
+        border-radius: 30px;
+        background-color: #4CAF50;
+        float: none;
+}
+.submit:hover, .submit:focus {
+  background-color: darkcyan;
+}
